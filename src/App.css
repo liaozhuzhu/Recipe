@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Titan+One&display=swap');
+
+/* App.js */
 .App {
   min-height: 100vh;
   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
@@ -20,7 +24,7 @@
   background: skyblue;
   border: none;
   padding: 10px 20px;
-  color: white;
+  color: black;
 }
 
 .recipes {
@@ -29,6 +33,7 @@
   flex-wrap: wrap;
 }
 
+/* Recipe.js */
 .container {
   border-radius: 10px;
   margin: 20px;
@@ -37,5 +42,24 @@
   justify-content: space-around;
   background-color: white;
   align-items: center;
+  width: 150px;
   min-width: 40%;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+.title {
+  font-family: 'Titan One', cursive;
+}
+
+.calories {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.image {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border: 5px solid #000000;
 }
