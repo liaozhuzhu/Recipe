@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import uniqid from "uniqid";
 import Recipe from "./components/Recipe";
 import './App.css';
 
@@ -33,18 +34,19 @@ const App = () => {
   return (
     <div className="App">
       <form className="search-form" onSubmit={getSearch}>
-        <input className="search-bar" type="text" value={search} onChange={updateSearch} />
+        <input className="search-bar" type="text" value={search} onChange={updateSearch} autoFocus/>
         <button className="search-button" type="submit">Search</button>
       </form>
       <h1 id="recipes-title">Recipes:</h1>
       <div className="recipes">
         {recipes.map(recipe =>(
           <Recipe 
-            key={recipe.recipe.label}
+            key={recipe.recipe.image}
             title={recipe.recipe.label}
             calories={recipe.recipe.calories}
             image={recipe.recipe.image}
             ingredients={recipe.recipe.ingredients}
+            directions={recipe.recipe.url}
           />
         ))}
       </div>
