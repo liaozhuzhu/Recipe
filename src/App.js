@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import uniqid from "uniqid";
 import Recipe from "./components/Recipe";
 import './App.css';
 
