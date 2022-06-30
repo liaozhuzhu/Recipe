@@ -91,7 +91,7 @@ ol > li:before {
   content: counter(item) ".";
 }
 
-/* Mobile */
+/* Mobile
 @media only screen and (max-width: 767px)
 {
     html, body
@@ -102,3 +102,4 @@ ol > li:before {
         text-align: center;
     }
 }
+*/
