@@ -36,6 +36,7 @@ const App = () => {
         <input className="search-bar" type="text" value={search} onChange={updateSearch} />
         <button className="search-button" type="submit">Search</button>
       </form>
+      <h1 id="recipes-title">Recipes:</h1>
       <div className="recipes">
         {recipes.map(recipe =>(
           <Recipe 

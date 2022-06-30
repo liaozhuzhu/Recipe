@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&display=swap');
 
 /* App.js */
 .App {
@@ -27,6 +27,11 @@
   color: black;
 }
 
+#recipes-title {
+  font-family: 'Arima', cursive;
+  text-align: center;
+}
+
 .recipes {
   display: flex;
   justify-content: space-around;
@@ -46,14 +51,12 @@
   min-width: 40%;
   padding: 50px;
   padding-top: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .title {
-  font-family: 'Titan One', cursive;
-}
-
-.calories {
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Arima', cursive;
+  text-decoration: underline;
 }
 
 .image {
@@ -62,4 +65,40 @@
   border-radius: 50%;
   -khtml-border-radius: 50%;
   border: 5px solid #000000;
+  margin: 15px;
+}
+
+ol {
+  margin: 0 0 1.5em;
+  padding: 0;
+  counter-reset: item;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px)
+{
+    html, body
+    {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        text-align: center;
+    }
 }
