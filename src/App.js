@@ -34,7 +34,7 @@ const App = () => {
     <div className="App">
       <form className="search-form" onSubmit={getSearch}>
         <input className="search-bar" type="text" value={search} onChange={updateSearch} autoFocus/>
-        <button className="search-button" type="submit">Search</button>
+        <button className="button" type="submit">Search</button>
       </form>
       <h1 id="recipes-title">Recipes:</h1>
       <div className="recipes">
